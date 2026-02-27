@@ -35,6 +35,8 @@ npm start
 1. Login from Angular (`/auth/login`) to receive access + refresh tokens.
 2. JWT interceptor injects bearer token to protected APIs.
 3. Route guards enforce auth and role checks.
+4. Role-based redirect after login: super_admin→Admin, teacher→Attendance, accountant→Fees, etc.
+5. RFID attendance: `POST /api/attendance/rfid-scan` accepts `{ rfidTag }` and marks student present.
 
 ## 5) Deployment Guide
 
